@@ -47,7 +47,7 @@ function updateProducts(id, newProducts) {
         .catch(err => reject(err))
     })
 }
-
+//delete
 function deleteProducts(id) {
     return new Promise((resolve, reject) => {
         helper.mustBeInArray(products, id)

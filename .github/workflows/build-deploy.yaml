@@ -50,3 +50,4 @@ jobs:
         images: '${{secrets.DOCKER_USERNAME}}/ctse-shop-product:${{github.sha}}'
         imagepullsecrets: docker-image-pull-secret
         action: deploy
+        
