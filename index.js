@@ -13,6 +13,6 @@ app.get('/', (req, res) => {
     res.json({ message: 'Hello world' })
 })
 // Starting server
-app.listen('1337', () =>{
+app.listen('3000', () =>{
     console.log(`Server is running`);
 });
