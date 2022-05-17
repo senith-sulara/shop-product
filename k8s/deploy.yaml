@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ctse-shop-product
+spec:
+  selector:
+    matchLabels:
+      app: ctse-shop-product
+  template:
+    metadata:
+      labels:
+        app: ctse-shop-product
+    spec:
+      containers:
+        - name: ctse-shop-product
+          image: senith26450/ctse-shop-product
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 3000
