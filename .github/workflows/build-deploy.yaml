@@ -2,7 +2,7 @@ name: Docker Build Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -50,4 +50,3 @@ jobs:
         images: '${{secrets.DOCKER_USERNAME}}/ctse-shop-product:${{github.sha}}'
         imagepullsecrets: docker-image-pull-secret
         action: deploy
-        
